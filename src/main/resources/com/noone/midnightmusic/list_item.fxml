@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#play" prefHeight="70.0" prefWidth="850.0" styleClass="list-item" stylesheets="@css/home.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="title" layoutX="16.0" layoutY="14.0" text="TSTTITLE" textFill="#eeeeee">
+         <font>
+            <Font name="Roboto Medium" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="artist" layoutX="16.0" layoutY="38.0" text="Unknown" textFill="#eeeeee">
+         <font>
+            <Font name="Roboto Light" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="duration" layoutX="795.0" layoutY="29.0" text="04:56" textFill="#eeeeee">
+         <font>
+            <Font name="Roboto Thin" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

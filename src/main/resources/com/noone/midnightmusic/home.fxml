@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" styleClass="window-background" stylesheets="@css/global.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.noone.midnightmusic.controller.HomeController">
+   <children>
+      <AnchorPane prefHeight="800.0" prefWidth="257.0" styleClass="home-leftside" stylesheets="@css/home.css">
+         <children>
+            <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="15.0" layoutY="13.0" onMouseClicked="#exit" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/close.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="48.0" layoutY="13.0" onMouseClicked="#minimize" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/minimize.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="24.0" layoutY="83.0" text="Menu" textFill="#ededed98">
+               <font>
+                  <Font name="Roboto Light" size="16.0" />
+               </font>
+            </Label>
+            <Pane fx:id="menuHome" layoutX="24.0" layoutY="120.0" onMouseClicked="#loadHome" prefHeight="48.0" prefWidth="229.0" stylesheets="@css/home.css">
+               <children>
+                  <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="17.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/home.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="56.0" layoutY="10.0" text="Home">
+                     <font>
+                        <Font name="Roboto" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="menuSearch" layoutX="24.0" layoutY="180.0" onMouseClicked="#loadSearch" prefHeight="48.0" prefWidth="229.0" stylesheets="@css/home.css">
+               <children>
+                  <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="17.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/search.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="56.0" layoutY="10.0" text="Search">
+                     <font>
+                        <Font name="Roboto" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="24.0" layoutY="240.0" onMouseClicked="#loadSettings" prefHeight="48.0" prefWidth="229.0" stylesheets="@css/home.css">
+               <children>
+                  <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="17.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/settings.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="56.0" layoutY="10.0" text="Settings">
+                     <font>
+                        <Font name="Roboto" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="24.0" layoutY="300.0" onMouseClicked="#loadContact" prefHeight="48.0" prefWidth="229.0" stylesheets="@css/home.css">
+               <children>
+                  <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="17.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@image/contact.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="56.0" layoutY="10.0" text="Contact Me">
+                     <font>
+                        <Font name="Roboto" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="homePane" layoutX="250.0" prefHeight="694.0" prefWidth="950.0" styleClass="home-main" stylesheets="@css/home.css" />
+      <AnchorPane layoutX="250.0" layoutY="692.0" prefHeight="108.0" prefWidth="950.0" styleClass="home-player" stylesheets="@css/home.css">
+         <children>
+            <ImageView fx:id="currentImage" fitHeight="80.0" fitWidth="80.0" layoutX="8.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/logo.png" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <Label fx:id="currentTitle" layoutX="92.0" layoutY="37.0" text="No Music">
+               <font>
+                  <Font name="Roboto Medium" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="currentAuthor" layoutX="92.0" layoutY="62.0" text="No Music">
+               <font>
+                  <Font name="Roboto Light" size="15.0" />
+               </font>
+            </Label>
+            <Slider id="player-slider" fx:id="playerProgress" blockIncrement="1.0" layoutX="405.0" layoutY="64.0" prefHeight="16.0" prefWidth="464.0" stylesheets="@css/home.css" />
+            <Label fx:id="currentPosition" layoutX="361.0" layoutY="62.0" text="00:00">
+               <font>
+                  <Font name="Roboto Thin" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="currentDuration" layoutX="869.0" layoutY="62.0" text="00:00">
+               <font>
+                  <Font name="Roboto Thin" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="playPause" fitHeight="50.0" fitWidth="50.0" layoutX="600.0" layoutY="5.0" onMouseClicked="#musicPlayPause" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/play.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="prev" fitHeight="50.0" fitWidth="50.0" layoutX="520.0" layoutY="5.0" onMouseClicked="#musicPrev" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@image/prev.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="next" fitHeight="50.0" fitWidth="50.0" layoutX="680.0" layoutY="5.0" onMouseClicked="#musicNext" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@image/next.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="repeat" fitHeight="30.0" fitWidth="30.0" layoutX="871.0" layoutY="16.0" onMouseClicked="#repeatChange" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/repeat_one.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

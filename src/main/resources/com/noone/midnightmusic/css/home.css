@@ -1,0 +1,60 @@
+.home-leftside{
+	-fx-background-color: #08050E;
+	-fx-background-radius : 10px;
+}
+.home-main{
+	-fx-background-color: #08050E;
+	-fx-background-radius : 10px;
+}
+.home-player{
+	-fx-background-color : #08050E;
+	-fx-background-radius : 10px;
+}
+#player-slider{
+	-slider-filled-track-color: #29262F ;
+	-slider-track-color: -slider-filled-track-color ;
+	
+}
+#player-slider .thumb{
+	-fx-background-color : #cabbba;
+}
+
+#player-slider .track{
+	-fx-background-color: -slider-track-color ;
+}
+.home-leftside-menu-item{
+	-fx-background-color : #29262F;
+	-fx-background-radius : 10px;
+}
+#home-newplaylist{
+	-fx-background-color : #29262F;
+	-fx-background-radius : 10px;
+}
+.button{
+	-fx-background-color : #29262F;
+	-fx-background-radius : 10px;
+}
+#home-playlist{
+	-fx-background-color : #08050E;
+}
+.list{
+	-fx-background-insets: 0;
+    -fx-padding: 0px;
+    -fx-selection-bar : #08050E;
+}
+.list .list-cell:even{
+		-fx-background-color : #08050E;
+}
+.list .list-cell:odd{
+		-fx-background-color : #08050E;
+}
+.list-item{
+	-fx-background-color : #29262F;
+	-fx-background-radius : 10px;
+	-fx-margin : 10px;
+}
+.list-item-image .image{
+	-fx-background-radius: 10px;
+	-fx-border-radius : 10px;
+	-fx-radius : 10px;
+}

@@ -1,0 +1,18 @@
+@font-face{
+	font-family : Roboto-Light;
+	src : url('../font/Roboto-Light.ttf');
+}
+.window-background{
+	-fx-background: #08050E;
+	-fx-background-radius: 10px;
+	-fx-opacity : 98%;
+}
+.font-light{
+	
+	-fx-font-family : 'Roboto-Light' , Arial , sans-serif;
+}
+.textfield{
+    -fx-background-color: #eee;
+    -fx-background-radius: 10px;
+    -fx-border-color: none;
+}
