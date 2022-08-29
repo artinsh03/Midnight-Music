@@ -2,6 +2,7 @@
 <p>Midnight music is a free music player for linux</p>
 
 <h1>I would be happy if you participate in the development of this software</h1>
+<h2 id="attention">For using source code please use zulu as your jdk</h2>
 
 <h2>Install</h2>
 <ol>
